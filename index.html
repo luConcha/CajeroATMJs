@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cajero Automático</title>
+  </head>
+  <body>
+    <main class="main-body">
+      <div class="container">
+        <article class="row">
+          <h1 class="title">Cajero Automático</h1>
+          <section class="col col-border">
+            <h4>Ingresa a tu cuenta</h4>
+            <div>
+              <input type="text" id="user" placeholder="Usuario" />
+              <input type="password" id="password" placeholder="Password" />
+              <button class="btn btn-primary" id="btnIngresar">Ingresar</button>
+            </div>
+
+            <p id="error" class="fst-italic"></p>
+          </section>
+          <section class="col">
+            <h2 id="bienvenido" class="welcomeTitle"></h2>
+          </section>
+          <section class="col col-border" id="opciones">
+            <h4>Elija una opcion:</h4>
+            <div>
+              <button class="btn btn-secondary" id="btnConsultarSaldo">
+                Consultar Saldo
+              </button>
+              <button class="btn btn-secondary" id="btnIngresarOpcion">
+                Ingresar Monto
+              </button>
+              <button class="btn btn-secondary" id="btnRetirarOpcion">
+                Retirar Monto
+              </button>
+            </div>
+          </section>
+          <section class="col" id="saldoSeccion">
+            <h4>Saldo actual</h4>
+            <p class="saldoDisponible" id="saldoDisponible">
+              Tu saldo disponible es:
+            </p>
+            <p id="errorSaldo" class="fst-italic"></p>
+          </section>
+          <section class="col col-border" id="ingresarSeccion">
+            <h4>Ingrese nuevo saldo</h4>
+            <div>
+              <input
+                type="number"
+                id="saldoAIngresar"
+                placeholder="Saldo a ingresar"
+              />
+              <button class="btn btn-success" id="btnIngresarMonto">
+                Ingresar
+              </button>
+            </div>
+          </section>
+          <section class="col col-border" id="retirarSeccion">
+            <h4>Ingrese monto a retirar</h4>
+            <div>
+              <input
+                type="number"
+                id="saldoARetirar"
+                placeholder="Saldo a retirar"
+              />
+              <button class="btn btn-success" id="btnRetirarMonto">
+                Retirar
+              </button>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
